@@ -1,7 +1,7 @@
 
 main#box{
     display: flex;
-    background-color: rgb(219, 217, 217);
+    background-color: #242B33;
     height: 98%;
     width: 100%;
     max-width: 1000px;
@@ -17,7 +17,7 @@ main#box{
 
 .calendar{
     display: grid;
-    background-color: rgb(61, 57, 57);
+    background-color: #2A3C52;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
     width: 100%;
@@ -27,7 +27,7 @@ main#box{
 }
 
 .day{
-    background-color: rgb(29, 27, 27);
+    background-color: #295285;
     color: white;
     display: flex;
     width: 1fr;
@@ -35,13 +35,21 @@ main#box{
     min-height: 80%;
     padding: 5px;
     border-radius: 5px;
-    justify-content: center;
+    justify-content: start;
     font-size: 20px;
     font-weight: bold;
 }
 
 .day:hover{
-    background-color: rgb(43, 39, 39);
+    background-color: #155EB8;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+#title{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }

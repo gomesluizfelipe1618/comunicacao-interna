@@ -1,4 +1,4 @@
-import "./grid.css";
+import "./calend.css";
 
 function getDaysInCurrentMonth(): number{
     const actualMonth = new Date().getMonth() + 1; // Obter o mês atual (0-11, então adicionamos 1)
