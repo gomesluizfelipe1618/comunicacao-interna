@@ -1,6 +1,7 @@
 
 main#box{
     display: flex;
+    flex-direction: column;
     background-color: #242B33;
     height: 98%;
     width: 100%;
@@ -13,6 +14,29 @@ main#box{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     justify-content: center;
     align-items: center;
+}
+
+section#header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+span.arrow{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+span.arrow:hover{
+    background-color: #155eb86c;
+    border-radius: 100%;
+    transition: background-color 0.3s ease;
 }
 
 .calendar{
@@ -44,6 +68,10 @@ main#box{
     background-color: #155EB8;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+#actual-day{
+    border: 3px solid #a79d12;
 }
 
 #title{

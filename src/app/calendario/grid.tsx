@@ -7,13 +7,17 @@ function getDaysInCurrentMonth(): number{
     return new Date(actualYear, actualMonth, 0).getDate();
 }
 
+function getDay(){
+    return new Date().getDate();
+}
+
 export default function Grid(){
     const daysInMonth = getDaysInCurrentMonth();
 
     const days = [];
     for (let i = 1; i <= daysInMonth; i++) {
         days.push(
-        <div className="day">
+        <div className="day" {...(i === getDay()) ? {id: "actual-day"} : {}}>
             <span className="n-day">{i}</span>
             </div>
     );
