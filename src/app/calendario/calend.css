@@ -71,6 +71,7 @@ span.arrow:hover{
 }
 
 #actual-day{
+    background-color: #1b6ccf;
     border: 3px solid #a79d12;
 }
 

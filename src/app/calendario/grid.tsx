@@ -7,9 +7,11 @@ function getDaysInCurrentMonth(): number{
     return new Date(actualYear, actualMonth, 0).getDate();
 }
 
+
 function getDay(){
     return new Date().getDate();
 }
+
 
 export default function Grid(){
     const daysInMonth = getDaysInCurrentMonth();
@@ -27,5 +29,5 @@ export default function Grid(){
         <section className="calendar">
             {days}
         </section>
-    )
+    );
 }
